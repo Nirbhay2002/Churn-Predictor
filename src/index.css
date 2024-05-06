@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Roboto:wght@300&display=swap');
+
+* {    
+  margin: 0;
+}
+
 body {
   margin: 0;
+  background: rgb(252, 240, 219);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +17,74 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.heading{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2em;
+  text-align:center;
+  padding: 2%;
+  /* background:  */
+}
+.heading h1{
+  padding-bottom: 3%;
+}
+.underline{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 4%;
+  border: solid black 1px;
+  height: 0px;
+}
+
+.form-data{
+  border: solid black 2px;
+  /* height: 100px; */
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+.feature-label{
+  margin: 2%;
+  margin-bottom: 2%;
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  display:flex;
+  align-items: center;
+}
+.form-data hr{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 4%;
+  border: solid black 1px;
+  height: 0px;
+  margin-bottom: 7%;
+}
+
+.prediction-container{
+  text-align: center;
+  margin-bottom: 5%;
+}
+.prediction-value{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.5em;
+}
+.Details{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 5%;
+}
+.Details h1{
+  font-size: 2.7em;
+}
+.Details p{
+  font-size: 2em;
+  margin-top: 2%;
 }
