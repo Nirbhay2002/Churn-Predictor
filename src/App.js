@@ -5,6 +5,7 @@ import React from 'react';
 
 function App() {
   const [displayContent, setDisplayContent] = React.useState(false);
+  
   return (
     <div className="App">
       <Header />

@@ -1,8 +1,6 @@
-// import React from 'react';
 import { Container } from '@mui/material';
 
 const Header = () => {
-  // Component logic here
 
   return (
     <Container maxWidth="lg" className = "heading">

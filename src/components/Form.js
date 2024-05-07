@@ -1,5 +1,4 @@
 import React from 'react';
-// import features from '../features';
 import { Button, Container, MenuItem, Select, TextField } from '@mui/material';
 
 const Form = ({displayContent, setDisplayContent}) => {
