@@ -4,7 +4,7 @@ import { Button, Container, MenuItem, Select, TextField } from '@mui/material';
 const Form = ({displayContent, setDisplayContent}) => {
 
 const [featureData, setFeatureData] = React.useState({});
-const [prediction, setPrediction] = React.useState({});
+const [prediction, setPrediction] = React.useState(-1);
 
 const handleChange = (event) =>{
     const {value, name} = event.target;
@@ -16,7 +16,7 @@ const handleChange = (event) =>{
     })
 }
 
-console.log(featureData);
+// console.log(featureData);
 
 const handleSubmit = (e) =>{
     e.preventDefault();
@@ -28,7 +28,7 @@ const handleSubmit = (e) =>{
             }
         })
         .then(res => res.json())
-        .then(data => setPrediction(data))
+        .then(data => setPrediction(data.churn_prediction[0]))
         
     setDisplayContent(true);
 }
@@ -42,6 +42,8 @@ const buttonStyle = {
     "text-align":"center",
     "margin":"3%"
 }
+
+console.log(prediction)
 
   return (
     <Container className = "body-container" maxWidth="elg">
@@ -90,7 +92,7 @@ const buttonStyle = {
         </Container>
         {displayContent && 
         <Container maxWidth="elg" className = "prediction-container">
-            <p className = "prediction-value">{prediction.churn_prediction === 1 ? "Customer will Churn" : "Customer will not Churn"}</p>
+            <p className = "prediction-value">{prediction === 1 ? "Customer will Churn" : "Customer will not Churn"}</p>
             <hr className = "underline"></hr>
         </Container>}
     </Container>
